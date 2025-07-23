@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <script src="jquery.3.6.3.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            Code Editor
+        </div>
+        <div id="buttons"> 
+            <div class="toggleButton active" id="html">HTML</div>
+            <div class="toggleButton" id="css">CSS</div>
+            <!-- <div class="toggleButton" id="javascript">Javascript</div> -->
+            <div class="toggleButton active" id="output">Output</div>
+        </div>
+        <div id="save" title="This will be saved to your local storage">Save</div>
+    </nav>
+    <div id="bodycontainer">
+        <textarea id="htmlBody" class="pannel"><p id="para">Hello</p></textarea>
+        <textarea id="cssBody" class="pannel hide">p {color: green}</textarea>
+        <!-- <textarea id="javascriptBody" class="pannel hide">document.getElementById("para").innerHTML = "Hello World!"</textarea> -->
+        <iframe id="outputBody" class="pannel">Hello</iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
