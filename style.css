@@ -1,0 +1,81 @@
+body {
+    font-size: max(2vw, 2vh);
+    padding: 0%;
+    max-width: 100%;
+    margin: 0%;
+}
+
+nav {
+    padding: max(1vw, 1vh);
+    height: max(5vh, 4vw);
+    background-color: black;
+    color: white;
+}
+
+#logo {
+    padding: max(0.5vw, 0.5vh);
+    font-weight: bolder;
+    font-size: max(2vw, 2vh);
+    float: left;
+}
+
+@media screen and (max-width: 412px) {
+    #logo {
+        max-width: 50px;
+    }
+  }
+
+#buttons {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.toggleButton {
+    float: left;
+    padding: max(0.5vw, 0.5vh);
+    margin: 0vw 1vw;
+    border-radius: 10%;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.active {
+    background-color: greenyellow;
+}
+
+.hoverclass {
+    background-color: red;
+    color: white;
+}
+
+#save{
+    float: right;
+    background-color: green;
+    padding: max(0.7vw, 0.7vh);
+    border-radius: 10%;
+    margin: 0vw 1vw;
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    border-top: none;
+    border: 0.1vw solid black;
+    margin: max(0.5vw, 0.5vh);
+    margin-right: 0;
+    font-size: max(2vw, 2vh);
+}
+
+.hide{
+    display: none;
+}
+
+#bodycontainer{
+    width: 100vw;
+}
+
+iframe{
+    margin: max(0.7vw, 0.7vh);
+    border: 0;
+}
